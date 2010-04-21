@@ -44,7 +44,7 @@ class HeadachesController < ApplicationController
 
     respond_to do |format|
       if @headach.save
-        flash[:notice] = 'Headach was successfully created.'
+        flash[:notice] = 'Headache was successfully created.'
         format.html { redirect_to(@headach) }
         format.xml  { render :xml => @headach, :status => :created, :location => @headach }
       else
@@ -61,7 +61,7 @@ class HeadachesController < ApplicationController
 
     respond_to do |format|
       if @headach.update_attributes(params[:headach])
-        flash[:notice] = 'Headach was successfully updated.'
+        flash[:notice] = 'Headache was successfully updated.'
         format.html { redirect_to(@headach) }
         format.xml  { head :ok }
       else

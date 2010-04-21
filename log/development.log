@@ -23,3 +23,36 @@ Migrating to CreatePatients (20100421053519)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("patients")[0m
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-04-20 23:12:03) [GET]
+  [4;36;1mPatient Load (0.5ms)[0m   [0;1mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+
+ActionView::TemplateError (undefined local variable or method `new_patient_path' for #<ActionView::Base:0x101f35500>) on line #22 of app/views/patients/index.html.erb:
+19: 
+20: <br />
+21: 
+22: <%= link_to 'New patient', new_patient_path %>
+
+    app/views/patients/index.html.erb:22
+    app/controllers/patients_controller.rb:7:in `index'
+
+Rendered rescues/_trace (107.7ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-04-20 23:13:36) [GET]
+  [4;35;1mPatient Load (0.3ms)[0m   [0mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/patients]
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-04-20 23:16:50) [GET]
+  [4;36;1mPatient Load (0.3ms)[0m   [0;1mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
