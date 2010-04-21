@@ -1,0 +1,1 @@
+{"completed_tables":[],"local_tables_info":{"schema_migrations":1,"patients":0},"klass":"Taps::Push","remote_url":"http://heroku:osui59a24am79x@taps3.heroku.com","session_uri":"/sessions/3416051588","database_url":"sqlite://db/development.sqlite3","table_filter":null,"stream_state":{}}

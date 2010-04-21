@@ -56,3 +56,293 @@ Processing PatientsController#index (for 127.0.0.1 at 2010-04-20 23:16:50) [GET]
 Rendering template within layouts/patients
 Rendering patients/index
 Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-04-20 23:32:53) [GET]
+  [4;36;1mPatient Load (0.4ms)[0m   [0;1mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Completed in 24ms (View: 20, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PatientsController#new (for 127.0.0.1 at 2010-04-20 23:32:56) [GET]
+Rendering template within layouts/patients
+Rendering patients/new
+Completed in 18ms (View: 14, DB: 0) | 200 OK [http://localhost/patients/new]
+
+
+Processing PatientsController#create (for 127.0.0.1 at 2010-04-20 23:33:05) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"7aLr7wQVRYs+KdOKqZ39e4N4xlzNmIT1wIvI2KzDm7I=", "patient"=>{"name"=>"bal", "email"=>"bla"}}
+  [4;35;1mPatient Create (0.4ms)[0m   [0mINSERT INTO "patients" ("name", "created_at", "updated_at", "email") VALUES('bal', '2010-04-21 06:33:05', '2010-04-21 06:33:05', 'bla')[0m
+Redirected to http://localhost:3000/patients/1
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/patients]
+
+
+Processing PatientsController#show (for 127.0.0.1 at 2010-04-20 23:33:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPatient Load (0.2ms)[0m   [0;1mSELECT * FROM "patients" WHERE ("patients"."id" = 1) [0m
+Rendering template within layouts/patients
+Rendering patients/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/patients/1]
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-04-20 23:33:07) [GET]
+  [4;35;1mPatient Load (0.5ms)[0m   [0mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/patients]
+
+
+Processing HeadachesController#index (for 127.0.0.1 at 2010-04-20 23:33:14) [GET]
+  [4;36;1mHeadach Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: headaches: SELECT * FROM "headaches" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: headaches: SELECT * FROM "headaches" ):
+  app/controllers/headaches_controller.rb:5:in `index'
+
+Rendered rescues/_trace (105.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HeadachesController#index (for 127.0.0.1 at 2010-04-20 23:34:55) [GET]
+  [4;35;1mHeadach Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: headaches: SELECT * FROM "headaches" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: headaches: SELECT * FROM "headaches" ):
+  app/controllers/headaches_controller.rb:5:in `index'
+
+Rendered rescues/_trace (38.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HeadachesController#index (for 127.0.0.1 at 2010-04-20 23:34:56) [GET]
+  [4;36;1mHeadach Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: headaches: SELECT * FROM "headaches" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: headaches: SELECT * FROM "headaches" ):
+  app/controllers/headaches_controller.rb:5:in `index'
+
+Rendered rescues/_trace (39.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HeadachesController#new (for 127.0.0.1 at 2010-04-20 23:35:01) [GET]
+
+ActiveRecord::StatementInvalid (Could not find table 'headaches'):
+  app/controllers/headaches_controller.rb:27:in `new'
+  app/controllers/headaches_controller.rb:27:in `new'
+
+Rendered rescues/_trace (36.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:35:09) [GET]
+
+ActionController::RoutingError (No route matches "/headach" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HeadachesController#index (for 127.0.0.1 at 2010-04-20 23:35:12) [GET]
+  [4;35;1mHeadach Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: headaches: SELECT * FROM "headaches" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: headaches: SELECT * FROM "headaches" ):
+  app/controllers/headaches_controller.rb:5:in `index'
+
+Rendered rescues/_trace (36.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePatients (20100421053519)
+Migrating to CreateHeadaches (20100421054101)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "headaches" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "start_time" integer, "duration" integer, "initial_severity" varchar(255), "max_severity" varchar(255), "notes" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100421054101')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("headaches")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("patients")[0m
+
+
+Processing HeadachesController#index (for 127.0.0.1 at 2010-04-20 23:37:24) [GET]
+  [4;36;1mHeadach Load (0.4ms)[0m   [0;1mSELECT * FROM "headaches" [0m
+Rendering template within layouts/headaches
+Rendering headaches/index
+Completed in 26ms (View: 22, DB: 0) | 200 OK [http://localhost/headaches]
+
+
+Processing HeadachesController#new (for 127.0.0.1 at 2010-04-20 23:37:30) [GET]
+Rendering template within layouts/headaches
+Rendering headaches/new
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/headaches/new]
+
+
+Processing HeadachesController#new (for 127.0.0.1 at 2010-04-20 23:39:25) [GET]
+Rendering template within layouts/headaches
+Rendering headaches/new
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/headaches/new]
+
+
+Processing HeadachesController#index (for 127.0.0.1 at 2010-04-20 23:39:31) [GET]
+  [4;35;1mHeadach Load (0.4ms)[0m   [0mSELECT * FROM "headaches" [0m
+Rendering template within layouts/headaches
+Rendering headaches/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/headaches]
+
+
+Processing HeadachesController#new (for 127.0.0.1 at 2010-04-20 23:39:42) [GET]
+Rendering template within layouts/headaches
+Rendering headaches/new
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/headaches/new]
+
+
+Processing HeadachesController#create (for 127.0.0.1 at 2010-04-20 23:39:51) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"7aLr7wQVRYs+KdOKqZ39e4N4xlzNmIT1wIvI2KzDm7I=", "headach"=>{"duration"=>"asdf", "notes"=>"asdf", "max_severity"=>"adsf", "initial_severity"=>"adsf", "start_time"=>"asd"}}
+  [4;36;1mHeadach Create (0.4ms)[0m   [0;1mINSERT INTO "headaches" ("duration", "created_at", "notes", "updated_at", "initial_severity", "max_severity", "start_time") VALUES(0, '2010-04-21 06:39:51', 'asdf', '2010-04-21 06:39:51', 'adsf', 'adsf', 0)[0m
+Redirected to http://localhost:3000/headaches/1
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/headaches]
+
+
+Processing HeadachesController#show (for 127.0.0.1 at 2010-04-20 23:39:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHeadach Load (0.2ms)[0m   [0mSELECT * FROM "headaches" WHERE ("headaches"."id" = 1) [0m
+Rendering template within layouts/headaches
+Rendering headaches/show
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/headaches/1]
+
+
+Processing HeadachesController#edit (for 127.0.0.1 at 2010-04-20 23:40:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHeadach Load (0.2ms)[0m   [0;1mSELECT * FROM "headaches" WHERE ("headaches"."id" = 1) [0m
+Rendering template within layouts/headaches
+Rendering headaches/edit
+Completed in 85ms (View: 80, DB: 0) | 200 OK [http://localhost/headaches/1/edit]
+
+
+Processing HeadachesController#index (for 127.0.0.1 at 2010-04-20 23:40:05) [GET]
+  [4;35;1mHeadach Load (0.5ms)[0m   [0mSELECT * FROM "headaches" [0m
+Rendering template within layouts/headaches
+Rendering headaches/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/headaches]
+
+
+Processing HeadachesController#show (for 127.0.0.1 at 2010-04-20 23:40:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHeadach Load (0.2ms)[0m   [0;1mSELECT * FROM "headaches" WHERE ("headaches"."id" = 1) [0m
+Rendering template within layouts/headaches
+Rendering headaches/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/headaches/1]
+
+
+Processing HeadachesController#index (for 127.0.0.1 at 2010-04-20 23:40:16) [GET]
+  [4;35;1mHeadach Load (0.5ms)[0m   [0mSELECT * FROM "headaches" [0m
+Rendering template within layouts/headaches
+Rendering headaches/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/headaches]
+
+
+Processing HeadachesController#index (for 127.0.0.1 at 2010-04-20 23:41:30) [GET]
+  [4;36;1mHeadach Load (0.5ms)[0m   [0;1mSELECT * FROM "headaches" [0m
+Rendering template within layouts/headaches
+Rendering headaches/index
+Completed in 15ms (View: 11, DB: 1) | 200 OK [http://localhost/headaches]
+
+
+Processing HeadachesController#index (for 127.0.0.1 at 2010-04-20 23:45:48) [GET]
+  [4;35;1mHeadach Load (0.5ms)[0m   [0mSELECT * FROM "headaches" [0m
+Rendering template within layouts/headaches
+Rendering headaches/index
+Completed in 88ms (View: 6, DB: 0) | 200 OK [http://localhost/headaches]
+
+
+Processing HeadachesController#index (for 127.0.0.1 at 2010-04-20 23:45:50) [GET]
+  [4;36;1mHeadach Load (0.5ms)[0m   [0;1mSELECT * FROM "headaches" [0m
+Rendering template within layouts/headaches
+Rendering headaches/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/headaches]
+
+
+Processing HeadachesController#new (for 127.0.0.1 at 2010-04-20 23:45:52) [GET]
+Rendering template within layouts/headaches
+Rendering headaches/new
+Completed in 73ms (View: 68, DB: 0) | 200 OK [http://localhost/headaches/new]
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-04-20 23:46:15) [GET]
+  [4;35;1mPatient Load (0.5ms)[0m   [0mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Completed in 25ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-04-20 23:49:14) [GET]
+  [4;36;1mPatient Load (0.5ms)[0m   [0;1mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+
+ActionView::TemplateError (undefined local variable or method `index_patient_path' for #<ActionView::Base:0x1043ce290>) on line #24 of app/views/patients/index.html.erb:
+21: 
+22: <%= link_to 'New patient', new_patient_path %>
+23: 
+24: <%= link_to 'List of patient Headaches', index_patient_path %>
+
+    app/views/patients/index.html.erb:24
+    app/controllers/patients_controller.rb:7:in `index'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-04-20 23:50:22) [GET]
+  [4;35;1mPatient Load (0.5ms)[0m   [0mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HeadachesController#index (for 127.0.0.1 at 2010-04-20 23:50:29) [GET]
+  [4;36;1mHeadach Load (0.5ms)[0m   [0;1mSELECT * FROM "headaches" [0m
+Rendering template within layouts/headaches
+Rendering headaches/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/headaches]
+
+
+Processing HeadachesController#new (for 127.0.0.1 at 2010-04-20 23:50:33) [GET]
+Rendering template within layouts/headaches
+Rendering headaches/new
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/headaches/new]
+
+
+Processing HeadachesController#index (for 127.0.0.1 at 2010-04-20 23:50:34) [GET]
+  [4;35;1mHeadach Load (0.5ms)[0m   [0mSELECT * FROM "headaches" [0m
+Rendering template within layouts/headaches
+Rendering headaches/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/headaches]
+
+
+Processing HeadachesController#index (for 127.0.0.1 at 2010-04-20 23:53:01) [GET]
+  [4;36;1mHeadach Load (0.5ms)[0m   [0;1mSELECT * FROM "headaches" [0m
+Rendering template within layouts/headaches
+Rendering headaches/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/headaches]
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-04-20 23:53:05) [GET]
+  [4;35;1mPatient Load (0.5ms)[0m   [0mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/patients]

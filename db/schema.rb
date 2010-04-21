@@ -9,7 +9,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100421053519) do
+ActiveRecord::Schema.define(:version => 20100421054101) do
+
+  create_table "headaches", :force => true do |t|
+    t.integer  "start_time"
+    t.integer  "duration"
+    t.string   "initial_severity"
+    t.string   "max_severity"
+    t.string   "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "patients", :force => true do |t|
     t.string   "name"
