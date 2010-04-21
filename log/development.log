@@ -416,3 +416,155 @@ Processing PagesController#about (for 127.0.0.1 at 2010-04-21 13:53:52) [GET]
 Rendering template within layouts/application
 Rendering pages/about
 Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-04-21 14:18:33) [GET]
+  [4;36;1mPatient Load (0.6ms)[0m   [0;1mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Completed in 95ms (View: 84, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-04-21 14:18:38) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 155ms (View: 154, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-04-21 14:18:42) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-04-21 14:18:53) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Completed in 107ms (View: 105, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-04-21 14:18:55) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-04-21 14:19:01) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-04-21 14:19:03) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-04-21 14:19:08) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-04-21 14:19:10) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-04-21 14:19:16) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-04-21 14:21:43) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-04-21 14:21:45) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-04-21 14:22:28) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-04-21 14:23:31) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-04-21 14:23:32) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-04-21 14:25:38) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-04-21 14:25:39) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-04-21 14:25:41) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-04-21 14:25:44) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-04-21 14:25:47) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-04-21 14:25:50) [GET]
+  [4;35;1mPatient Load (0.5ms)[0m   [0mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/patients]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-04-21 14:25:54) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-04-21 14:26:02) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-04-21 14:26:03) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-04-21 14:26:05) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/contact]

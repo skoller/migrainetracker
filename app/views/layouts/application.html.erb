@@ -2,13 +2,14 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>HeadacheTracker | <%= @title %></title>
+    <title><%= @base_title %> | <%= @title %></title>
   </head>
   <body>
     <%= yield %>
 <%= link_to 'HOME', :controller => 'pages', :action => 'home' %>
 <%= link_to 'ABOUT US', :controller => 'pages', :action => 'about' %>
 <%= link_to 'CONTACT', :controller => 'pages', :action => 'contact' %>
+<%= link_to 'HELP', :controller => 'pages', :action => 'help' %>
 <%= link_to 'PATIENT DATA', :controller => 'patients', :action => 'index' %>
   </body>
 
