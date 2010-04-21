@@ -1,0 +1,32 @@
+<h1>Editing headach</h1>
+
+<% form_for(@headach) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :start_time %><br />
+    <%= f.text_field :start_time %>
+  </p>
+  <p>
+    <%= f.label :duration %><br />
+    <%= f.text_field :duration %>
+  </p>
+  <p>
+    <%= f.label :initial_severity %><br />
+    <%= f.text_field :initial_severity %>
+  </p>
+  <p>
+    <%= f.label :max_severity %><br />
+    <%= f.text_field :max_severity %>
+  </p>
+  <p>
+    <%= f.label :notes %><br />
+    <%= f.text_field :notes %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @headach %> |
+<%= link_to 'Back', headaches_path %>

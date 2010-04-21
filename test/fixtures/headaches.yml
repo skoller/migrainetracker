@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  start_time: 1
+  duration: 1
+  initial_severity: MyString
+  max_severity: MyString
+  notes: MyString
+
+two:
+  start_time: 1
+  duration: 1
+  initial_severity: MyString
+  max_severity: MyString
+  notes: MyString

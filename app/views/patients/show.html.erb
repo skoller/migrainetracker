@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @patient.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @patient.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_patient_path(@patient) %> |
+<%= link_to 'Back', patients_path %>

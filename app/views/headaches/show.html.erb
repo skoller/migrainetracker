@@ -1,0 +1,28 @@
+<p>
+  <b>Start time:</b>
+  <%=h @headach.start_time %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%=h @headach.duration %>
+</p>
+
+<p>
+  <b>Initial severity:</b>
+  <%=h @headach.initial_severity %>
+</p>
+
+<p>
+  <b>Max severity:</b>
+  <%=h @headach.max_severity %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%=h @headach.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_headach_path(@headach) %> |
+<%= link_to 'Back', headaches_path %>

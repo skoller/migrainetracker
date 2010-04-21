@@ -1,0 +1,28 @@
+<h1>Listing headaches</h1>
+
+<table>
+  <tr>
+    <th>Start time</th>
+    <th>Duration</th>
+    <th>Initial severity</th>
+    <th>Max severity</th>
+    <th>Notes</th>
+  </tr>
+
+<% @headaches.each do |headach| %>
+  <tr>
+    <td><%=h headach.start_time %></td>
+    <td><%=h headach.duration %></td>
+    <td><%=h headach.initial_severity %></td>
+    <td><%=h headach.max_severity %></td>
+    <td><%=h headach.notes %></td>
+    <td><%= link_to 'Show', headach %></td>
+    <td><%= link_to 'Edit', edit_headach_path(headach) %></td>
+    <td><%= link_to 'Destroy', headach, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New headach', new_headach_path %>
