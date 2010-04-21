@@ -346,3 +346,73 @@ Processing PatientsController#index (for 127.0.0.1 at 2010-04-20 23:53:05) [GET]
 Rendering template within layouts/patients
 Rendering patients/index
 Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/patients]
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-04-21 13:43:26) [GET]
+  [4;36;1mPatient Load (1.1ms)[0m   [0;1mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Completed in 118ms (View: 88, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-21 13:43:30) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: about, contact, and home):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-04-21 13:43:49) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-04-21 13:44:05) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-04-21 13:44:22) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-04-21 13:53:21) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-04-21 13:53:25) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-04-21 13:53:27) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-04-21 13:53:29) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-04-21 13:53:30) [GET]
+  [4;35;1mPatient Load (0.5ms)[0m   [0mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/patients]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-04-21 13:53:52) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/about]
