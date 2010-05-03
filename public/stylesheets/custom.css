@@ -1,9 +1,9 @@
 .container {
-  width: 710px;
+  width: 800px;
 }
 
 body {
-  background: #cff;
+  background: white;
 }
 
 #header {
@@ -12,14 +12,14 @@ body {
 
 #header img {
   padding: 1em;
-  background: #fff;
+  background: white;
 }
 
 #content {
-  margin-top: 1em;
+  margin-top: 0.2em;
   font-size: 120%;
   padding: 20px;
-  background: #fff;
+  background: #D8EEEE;
 }
 
 /* Links */
@@ -43,19 +43,19 @@ a:visited {
 }
 
 .navigation {
-  background-color: white;
+  background-color: #D8EEEE;
   padding: 0 0.7em;
   white-space: nowrap;
 }
 
 ul.navigation {
-  margin: 0;
+  margin: 1.24em;
 }
 
 .navigation li {
   list-style-type: none;
   display: inline-block;
-  padding: 0.2em 0;
+  padding: 0.5em 0;
 }
 
 .navigation li a {
