@@ -3,14 +3,26 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title><%= @base_title %> | <%= @title %></title>
+	<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+	<%= stylesheet_link_tag 'blueprint/screen', :media => 'print' %>
+	<!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+	    <%= stylesheet_link_tag 'custom', :media => 'screen' %>
   </head>
   <body>
-    <%= yield %>
-<%= link_to 'HOME', :controller => 'pages', :action => 'home' %>
-<%= link_to 'ABOUT US', :controller => 'pages', :action => 'about' %>
-<%= link_to 'CONTACT', :controller => 'pages', :action => 'contact' %>
-<%= link_to 'HELP', :controller => 'pages', :action => 'help' %>
-<%= link_to 'PATIENT DATA', :controller => 'patients', :action => 'index' %>
+	<div class="container">
+	      <div id="header">
+	        <%= image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+	        <ul class="navigation round">
+<li><%= link_to 'HOME', :controller => 'pages', :action => 'home' %></li>
+<li><%= link_to 'ABOUT US', :controller => 'pages', :action => 'about' %></li>
+<li><%= link_to 'CONTACT', :controller => 'pages', :action => 'contact' %></li>
+<li><%= link_to 'HELP', :controller => 'pages', :action => 'help' %></li>
+<li><%= link_to 'PATIENT DATA', :controller => 'patients', :action => 'index' %></li>
+  </ul>
+      </div>
+      <div id="content" class="round">
+        <%= yield %>
+      </div>
+    </div>
   </body>
-
 </html>
