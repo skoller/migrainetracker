@@ -3334,3 +3334,1101 @@ ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-05-03 00:03:37) [GET]
+  Parameters: {"id"=>"about"}
+
+ActionController::UnknownAction (No action responded to show. Actions: about, contact, help, and home):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-05-03 00:03:42) [GET]
+  Parameters: {"id"=>"contact"}
+
+ActionController::UnknownAction (No action responded to show. Actions: about, contact, help, and home):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:04:01) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (1.2ms)
+Completed in 110ms (View: 108, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:04:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-05-03 00:04:02) [GET]
+  Parameters: {"id"=>"about"}
+
+ActionController::UnknownAction (No action responded to show. Actions: about, contact, help, and home):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:04:52) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:04:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-05-03 00:04:55) [GET]
+  Parameters: {"id"=>"about"}
+
+ActionController::UnknownAction (No action responded to show. Actions: about, contact, help, and home):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:04:57) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:04:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-05-03 00:04:58) [GET]
+  Parameters: {"id"=>"help"}
+
+ActionController::UnknownAction (No action responded to show. Actions: about, contact, help, and home):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:05:20) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (1.2ms)
+Completed in 95ms (View: 93, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:05:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-05-03 00:05:22) [GET]
+  Parameters: {"id"=>"about"}
+
+ActionController::UnknownAction (No action responded to show. Actions: about, contact, help, and home):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-03 00:06:18) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (1.4ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:06:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-03 00:06:21) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 69ms (View: 7, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:06:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-03 00:06:22) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:06:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:06:24) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:06:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-05-03 00:06:25) [GET]
+  [4;36;1mPatient Load (0.5ms)[0m   [0;1mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 29ms (View: 19, DB: 1) | 200 OK [http://localhost/patients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:06:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-03 00:07:06) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:07:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-05-03 00:07:14) [GET]
+  [4;35;1mPatient Load (0.5ms)[0m   [0mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/patients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:07:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:07:20) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:07:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-03 00:07:28) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:07:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-03 00:10:21) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:10:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-03 00:10:23) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:10:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-03 00:10:24) [GET]
+  Parameters: {"pages"=>"about"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/pages/contact?pages=about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:10:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-03 00:10:25) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:10:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-03 00:10:26) [GET]
+  Parameters: {"pages"=>"about"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/pages/contact?pages=about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:10:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:10:28) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:10:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-03 00:10:29) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:10:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-03 00:10:30) [GET]
+  Parameters: {"pages"=>"about"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/pages/help?pages=about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:10:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:12:27) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:12:35) [GET]
+
+ActionController::RoutingError (No route matches "//" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:13:11) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:13:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:13:15) [GET]
+  Parameters: {"pages"=>"about"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/?pages=about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:13:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:13:19) [GET]
+  Parameters: {"pages"=>"about"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/?pages=about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:13:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:13:21) [GET]
+  Parameters: {"pages"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/?pages=contact]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:13:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:13:24) [GET]
+  Parameters: {"pages"=>"about"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/?pages=about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:13:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:13:27) [GET]
+  Parameters: {"pages"=>"about"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/?pages=about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:13:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:13:28) [GET]
+  Parameters: {"pages"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/?pages=contact]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:13:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:13:31) [GET]
+  Parameters: {"pages"=>"about"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/?pages=about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:13:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-05-03 00:13:34) [GET]
+  Parameters: {"id"=>"help"}
+
+ActionController::UnknownAction (No action responded to show. Actions: about, contact, help, and home):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-05-03 00:13:39) [GET]
+  Parameters: {"id"=>"help"}
+
+ActionController::UnknownAction (No action responded to show. Actions: about, contact, help, and home):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-05-03 00:13:43) [GET]
+  Parameters: {"id"=>"help"}
+
+ActionController::UnknownAction (No action responded to show. Actions: about, contact, help, and home):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:13:47) [GET]
+  Parameters: {"pages"=>"about"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/?pages=about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:13:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:15:02) [GET]
+  Parameters: {"pages"=>"about"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (1.1ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/?pages=about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:15:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-03 00:15:03) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:15:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-03 00:15:04) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:15:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:15:06) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:15:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-03 00:15:07) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:15:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-05-03 00:15:08) [GET]
+  [4;36;1mPatient Load (0.5ms)[0m   [0;1mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/patients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:15:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-03 00:15:10) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:15:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-05-03 00:15:11) [GET]
+  [4;35;1mPatient Load (0.5ms)[0m   [0mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/patients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:15:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-03 00:15:12) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:15:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-05-03 00:15:13) [GET]
+  [4;36;1mPatient Load (0.5ms)[0m   [0;1mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/patients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:15:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-05-03 00:16:31) [GET]
+  [4;35;1mPatient Load (0.5ms)[0m   [0mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/patients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:16:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-05-03 00:16:58) [GET]
+  [4;36;1mPatient Load (0.5ms)[0m   [0;1mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/patients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:16:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:22:36) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:22:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-05-03 00:32:13) [GET]
+  [4;35;1mPatient Load (0.5ms)[0m   [0mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (1.4ms)
+Completed in 50ms (View: 45, DB: 0) | 200 OK [http://localhost/patients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:32:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-05-03 00:32:17) [GET]
+  Parameters: {"aciton"=>"contact"}
+
+ActionController::UnknownAction (No action responded to index. Actions: about, contact, help, and home):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-05-03 00:32:24) [GET]
+  [4;36;1mPatient Load (0.5ms)[0m   [0;1mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/patients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:32:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-05-03 00:32:25) [GET]
+  Parameters: {"aciton"=>"contact"}
+
+ActionController::UnknownAction (No action responded to index. Actions: about, contact, help, and home):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-03 00:32:29) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:32:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-05-03 00:32:31) [GET]
+  Parameters: {"aciton"=>"contact"}
+
+ActionController::UnknownAction (No action responded to index. Actions: about, contact, help, and home):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-03 00:32:53) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:32:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-03 00:32:55) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:32:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-03 00:32:56) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:32:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-03 00:32:58) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:32:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-03 00:34:10) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 73ms (View: 71, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:34:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:34:11) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:34:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-03 00:34:12) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/help]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:34:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-05-03 00:34:15) [GET]
+  [4;35;1mPatient Load (0.5ms)[0m   [0mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 12ms (View: 8, DB: 1) | 200 OK [http://localhost/patients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:34:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:34:17) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:34:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 00:39:53) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 00:39:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
