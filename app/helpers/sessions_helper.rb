@@ -12,10 +12,10 @@ module SessionsHelper
   end
   
   def current_patient
-    @current_patient ||= user_from_remember_token
+    @current_patient ||= patient_from_remember_token
   end
   
-  def patient_from_remeber_token
+  def patient_from_remember_token
     remember_token = cookies[:remember_token]
     Patient.find_by_remember_token(remember_token) unless remember_token.nil?
   end
@@ -23,6 +23,7 @@ module SessionsHelper
   def signed_in?
     !current_patient.nil?
   end
+  
   
   def sign_out
     cookies.delete(:remember_token)
