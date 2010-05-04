@@ -12069,3 +12069,305 @@ ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-04 03:42:55) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+  [4;36;1mPatient Load (0.3ms)[0m   [0;1mSELECT * FROM "patients" WHERE ("patients"."remember_token" = 'c88e2c93681b525ae2c4f20ae9d010209e82f50d1265ef9f7e7e6635c2863b9a') LIMIT 1[0m
+Rendered layouts/_header (48.6ms)
+Rendered layouts/_footer (0.9ms)
+Completed in 86ms (View: 84, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 03:42:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#new (for 127.0.0.1 at 2010-05-04 03:42:57) [GET]
+  Parameters: {"action"=>"new", "controller"=>"patients"}
+Rendering template within layouts/patients
+Rendering patients/new
+Rendered layouts/_stylesheets (0.5ms)
+  [4;35;1mPatient Load (0.4ms)[0m   [0mSELECT * FROM "patients" WHERE ("patients"."remember_token" = 'c88e2c93681b525ae2c4f20ae9d010209e82f50d1265ef9f7e7e6635c2863b9a') LIMIT 1[0m
+Rendered layouts/_header (4.2ms)
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 92ms (View: 83, DB: 0) | 200 OK [http://localhost/patients/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 03:42:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#create (for 127.0.0.1 at 2010-05-04 03:43:22) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"Gaz3Ve3Ze+QF3jpk76V7pVTBlTHdhBHxiZczX5ekAO0=", "patient"=>{"name"=>"hellothere1", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"sofun@fun.com"}, "controller"=>"patients"}
+  [4;36;1mPatient Load (0.2ms)[0m   [0;1mSELECT "patients".id FROM "patients" WHERE (LOWER("patients"."email") = 'sofun@fun.com') LIMIT 1[0m
+  [4;35;1mPatient Create (0.7ms)[0m   [0mINSERT INTO "patients" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('hellothere1', '231938ea555782527a9f07354728603897ef109700be9c33aa9cfbd33b484bd0', '74a14772937be97fb4da2e1557c0ddd0b823d83a211c54ddc8ea81ff264732c3', '2010-05-04 10:43:22', '2010-05-04 10:43:22', NULL, NULL, 'sofun@fun.com')[0m
+  [4;36;1mPatient Update (2.2ms)[0m   [0;1mUPDATE "patients" SET "updated_at" = '2010-05-04 10:43:22', "remember_token" = 'd1c8ae6eaddb068dd1426a41e1ca92fdddfacb532c71ac7e1ef7e0b2f0c50044' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/patients/3
+Completed in 329ms (DB: 3) | 302 Found [http://localhost/patients]
+
+
+Processing PatientsController#show (for 127.0.0.1 at 2010-05-04 03:43:22) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"patients"}
+  [4;35;1mPatient Load (0.3ms)[0m   [0mSELECT * FROM "patients" WHERE ("patients"."id" = 3) [0m
+Rendering template within layouts/patients
+Rendering patients/show
+Rendered layouts/_stylesheets (0.5ms)
+  [4;36;1mPatient Load (0.4ms)[0m   [0;1mSELECT * FROM "patients" WHERE ("patients"."remember_token" = 'd1c8ae6eaddb068dd1426a41e1ca92fdddfacb532c71ac7e1ef7e0b2f0c50044') LIMIT 1[0m
+Rendered layouts/_header (4.5ms)
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 82ms (View: 13, DB: 1) | 200 OK [http://localhost/patients/3]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 03:43:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-05-04 03:43:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"patients"}
+  [4;35;1mPatient Load (0.3ms)[0m   [0mSELECT * FROM "patients" WHERE ("patients"."remember_token" = 'd1c8ae6eaddb068dd1426a41e1ca92fdddfacb532c71ac7e1ef7e0b2f0c50044') LIMIT 1[0m
+  [4;36;1mPatient Load (0.4ms)[0m   [0;1mSELECT * FROM "patients" LIMIT 30 OFFSET 0[0m
+Rendering template within layouts/patients
+Rendering patients/index
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (2.9ms)
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 29ms (View: 20, DB: 1) | 200 OK [http://localhost/patients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 03:43:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#show (for 127.0.0.1 at 2010-05-04 03:44:45) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"patients"}
+  [4;35;1mPatient Load (0.3ms)[0m   [0mSELECT * FROM "patients" WHERE ("patients"."id" = 2) [0m
+Rendering template within layouts/patients
+Rendering patients/show
+Rendered layouts/_stylesheets (0.5ms)
+  [4;36;1mPatient Load (0.4ms)[0m   [0;1mSELECT * FROM "patients" WHERE ("patients"."remember_token" = 'd1c8ae6eaddb068dd1426a41e1ca92fdddfacb532c71ac7e1ef7e0b2f0c50044') LIMIT 1[0m
+Rendered layouts/_header (4.4ms)
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/patients/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 03:44:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-04 03:44:51) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.5ms)
+  [4;35;1mPatient Load (0.3ms)[0m   [0mSELECT * FROM "patients" WHERE ("patients"."remember_token" = 'd1c8ae6eaddb068dd1426a41e1ca92fdddfacb532c71ac7e1ef7e0b2f0c50044') LIMIT 1[0m
+Rendered layouts/_header (11.1ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/help]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 03:44:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#edit (for 127.0.0.1 at 2010-05-04 03:44:52) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"patients"}
+  [4;36;1mPatient Load (0.3ms)[0m   [0;1mSELECT * FROM "patients" WHERE ("patients"."remember_token" = 'd1c8ae6eaddb068dd1426a41e1ca92fdddfacb532c71ac7e1ef7e0b2f0c50044') LIMIT 1[0m
+  [4;35;1mPatient Load (0.2ms)[0m   [0mSELECT * FROM "patients" WHERE ("patients"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "patients" WHERE ("patients"."id" = 3) [0m
+Rendering template within layouts/patients
+Rendering patients/edit
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (2.8ms)
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/patients/3/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 03:44:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-05-04 03:44:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"patients"}
+  [4;35;1mPatient Load (0.3ms)[0m   [0mSELECT * FROM "patients" WHERE ("patients"."remember_token" = 'd1c8ae6eaddb068dd1426a41e1ca92fdddfacb532c71ac7e1ef7e0b2f0c50044') LIMIT 1[0m
+  [4;36;1mPatient Load (0.4ms)[0m   [0;1mSELECT * FROM "patients" LIMIT 30 OFFSET 0[0m
+Rendering template within layouts/patients
+Rendering patients/index
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (2.7ms)
+Rendered layouts/_stylesheets (72.8ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 96ms (View: 87, DB: 1) | 200 OK [http://localhost/patients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 03:44:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-04 03:45:18) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+  [4;35;1mPatient Load (0.3ms)[0m   [0mSELECT * FROM "patients" WHERE ("patients"."remember_token" = 'd1c8ae6eaddb068dd1426a41e1ca92fdddfacb532c71ac7e1ef7e0b2f0c50044') LIMIT 1[0m
+Rendered layouts/_header (10.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 03:45:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-04 09:35:35) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+  [4;36;1mPatient Load (0.4ms)[0m   [0;1mSELECT * FROM "patients" WHERE ("patients"."remember_token" = 'd1c8ae6eaddb068dd1426a41e1ca92fdddfacb532c71ac7e1ef7e0b2f0c50044') LIMIT 1[0m
+Rendered layouts/_header (18.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 56ms (View: 54, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 09:35:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#new (for 127.0.0.1 at 2010-05-04 09:35:36) [GET]
+  Parameters: {"action"=>"new", "controller"=>"patients"}
+Rendering template within layouts/patients
+Rendering patients/new
+Rendered layouts/_stylesheets (0.5ms)
+  [4;35;1mPatient Load (0.4ms)[0m   [0mSELECT * FROM "patients" WHERE ("patients"."remember_token" = 'd1c8ae6eaddb068dd1426a41e1ca92fdddfacb532c71ac7e1ef7e0b2f0c50044') LIMIT 1[0m
+Rendered layouts/_header (4.2ms)
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 91ms (View: 83, DB: 0) | 200 OK [http://localhost/patients/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 09:35:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#create (for 127.0.0.1 at 2010-05-04 09:36:00) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"e+Y2gVRysb/mNWgyimDell/r2GFD7798jvSmb5eZjV4=", "patient"=>{"name"=>"test3", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"testicle@explode.com"}, "controller"=>"patients"}
+  [4;36;1mPatient Load (0.2ms)[0m   [0;1mSELECT "patients".id FROM "patients" WHERE (LOWER("patients"."email") = 'testicle@explode.com') LIMIT 1[0m
+  [4;35;1mPatient Create (0.5ms)[0m   [0mINSERT INTO "patients" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('test3', '6ea7476db538e0d7dd05b295938c1ea5b0a7f4dfaf69102dd6785b987a573fa4', '6fb108f12e87a6807f56fa11bd951f67eea5ae0b6c06a72f2b3d2e2ac962eb29', '2010-05-04 16:36:01', '2010-05-04 16:36:01', NULL, NULL, 'testicle@explode.com')[0m
+  [4;36;1mPatient Update (2.0ms)[0m   [0;1mUPDATE "patients" SET "updated_at" = '2010-05-04 16:36:01', "encrypted_password" = '0a4946b3709990f79e600b110dd0ee38e710c8089e2c375fd863bdb7464664d2', "salt" = '9d65bc1065e669c20133bb41243e9373768e0696ae1c130371b0450d41a25d99', "remember_token" = '71a17ff78a5afeac833aa7e341848b799ebb92096545a5210b82daafea7a3f1b' WHERE "id" = 4[0m
+Redirected to http://localhost:3000/patients/4
+Completed in 222ms (DB: 3) | 302 Found [http://localhost/patients]
+
+
+Processing PatientsController#show (for 127.0.0.1 at 2010-05-04 09:36:01) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"patients"}
+  [4;35;1mPatient Load (0.3ms)[0m   [0mSELECT * FROM "patients" WHERE ("patients"."id" = 4) [0m
+Rendering template within layouts/patients
+Rendering patients/show
+Rendered layouts/_stylesheets (0.5ms)
+  [4;36;1mPatient Load (0.4ms)[0m   [0;1mSELECT * FROM "patients" WHERE ("patients"."remember_token" = '71a17ff78a5afeac833aa7e341848b799ebb92096545a5210b82daafea7a3f1b') LIMIT 1[0m
+Rendered layouts/_header (4.4ms)
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 83ms (View: 13, DB: 1) | 200 OK [http://localhost/patients/4]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 09:36:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-05-04 09:36:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"patients"}
+  [4;35;1mPatient Load (0.3ms)[0m   [0mSELECT * FROM "patients" WHERE ("patients"."remember_token" = '71a17ff78a5afeac833aa7e341848b799ebb92096545a5210b82daafea7a3f1b') LIMIT 1[0m
+  [4;36;1mPatient Load (0.5ms)[0m   [0;1mSELECT * FROM "patients" LIMIT 30 OFFSET 0[0m
+Rendering template within layouts/patients
+Rendering patients/index
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 33ms (View: 23, DB: 1) | 200 OK [http://localhost/patients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 09:36:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HeadachesController#index (for 127.0.0.1 at 2010-05-04 09:36:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"headaches"}
+  [4;35;1mHeadach Load (0.4ms)[0m   [0mSELECT * FROM "headaches" [0m
+Rendering template within layouts/headaches
+Rendering headaches/index
+Rendered layouts/_stylesheets (0.5ms)
+  [4;36;1mPatient Load (0.3ms)[0m   [0;1mSELECT * FROM "patients" WHERE ("patients"."remember_token" = '71a17ff78a5afeac833aa7e341848b799ebb92096545a5210b82daafea7a3f1b') LIMIT 1[0m
+Rendered layouts/_header (81.7ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 100ms (View: 94, DB: 1) | 200 OK [http://localhost/headaches]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 09:36:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
