@@ -47,6 +47,7 @@ class PatientsController < ApplicationController
 
     respond_to do |format|
       if @patient.save
+        sign_in @patient
         flash[:notice] = 'You have successfully signed up!'
         format.html { redirect_to @patient }
         format.xml  { render :xml => @patient, :status => :created, :location => @patient }
