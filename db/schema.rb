@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100504054332) do
+ActiveRecord::Schema.define(:version => 20100504091124) do
 
   create_table "headaches", :force => true do |t|
     t.integer  "start_time"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20100504054332) do
     t.string   "encrypted_password"
     t.string   "salt"
     t.string   "remember_token"
+    t.boolean  "admin"
   end
 
   add_index "patients", ["email"], :name => "index_Patients_on_email", :unique => true
