@@ -45,6 +45,9 @@ ActionController::Routing::Routes.draw do |map|
   map.help '/help', :controller => 'pages', :action => 'help'
   map.resources :headaches
   map.resources :patients
+  map.resources :sessions, :only => [:new, :create, :destroy]
+  map.signin  '/signin',  :controller => 'sessions', :action => 'new'
+  map.signout '/signout', :controller => 'sessions', :action => 'destroy'
   map.root :controller => 'pages', :action => 'home'
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
