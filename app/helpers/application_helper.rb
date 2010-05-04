@@ -3,3 +3,5 @@ module ApplicationHelper
   def logo
     image_tag("logo_hl_1.png", :alt => "Headache-LINE", :class => "round")
 end
+
+end
