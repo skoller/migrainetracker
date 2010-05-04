@@ -1,9 +1,12 @@
 class PatientsController < ApplicationController
+  before_filter :authenticate, :only => [:index, :edit, :update]
+  before_filter :correct_patient, :only => [:edit, :update]
+  before_filter :admin_user,   :only => :destroy
   # GET /patients
   # GET /patients.xml
   def index
-    @patients = Patient.all
-
+    @patients = Patient.paginate(:page => params[:page])
+    @title = "All Patients"
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @patients }
@@ -82,8 +85,25 @@ class PatientsController < ApplicationController
     @patient.destroy
 
     respond_to do |format|
-      format.html { redirect_to(patients_url) }
+      flash[:success] = "Patient Permanently Removed"
+      format.html { redirect_to(patients_path) }
       format.xml  { head :ok }
     end
+  end
+
+#--------------------------------------------
+private
+
+  def authenticate
+    deny_access unless signed_in?
+  end
+  
+  def correct_patient
+    @patient = Patient.find(params[:id])
+    redirect_to(root_path) unless current_patient?(@patient)
+  end
+  
+  def admin_user
+    redirect_to(root_path) unless current_patient.admin?
   end
 end

@@ -4,9 +4,10 @@
 	<li><%= link_to 'HOME', root_path %></li>
 	<% if signed_in? %>
 	<li><%= link_to 'Profile', current_patient %></li>
+	<li><%= link_to 'PATIENT DATA', :controller => 'patients', :action => 'index' %></li>
+	<li><%= link_to 'Settings', edit_patient_path(current_patient) %></li>
 	<% end %>	
 	<li><%= link_to 'HELP', help_path %></li>
-	<li><%= link_to 'PATIENT DATA', :controller => 'patients', :action => 'index' %></li>
 	<% if signed_in? %>
 	<li><%= link_to "Sign out", signout_path, :method => :delete %></li>
 	<% else %>	
