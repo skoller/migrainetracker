@@ -14,6 +14,7 @@ class PatientsController < ApplicationController
   # GET /patients/1.xml
   def show
     @patient = Patient.find(params[:id])
+    @title = "My Profile"
 
     respond_to do |format|
       format.html # show.html.erb
@@ -25,6 +26,7 @@ class PatientsController < ApplicationController
   # GET /patients/new.xml
   def new
     @patient = Patient.new
+    @title = "Sign up"
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,6 +37,7 @@ class PatientsController < ApplicationController
   # GET /patients/1/edit
   def edit
     @patient = Patient.find(params[:id])
+    @title = "Edit"
   end
 
   # POST /patients
@@ -44,7 +47,7 @@ class PatientsController < ApplicationController
 
     respond_to do |format|
       if @patient.save
-        flash[:notice] = 'Patient was successfully created.'
+        flash[:notice] = 'You have successfully signed up!'
         format.html { redirect_to(@patient) }
         format.xml  { render :xml => @patient, :status => :created, :location => @patient }
       else
@@ -61,7 +64,7 @@ class PatientsController < ApplicationController
 
     respond_to do |format|
       if @patient.update_attributes(params[:patient])
-        flash[:notice] = 'Patient was successfully updated.'
+        flash[:notice] = 'Your profile was successfully updated.'
         format.html { redirect_to(@patient) }
         format.xml  { head :ok }
       else
