@@ -6343,3 +6343,91 @@ Migrating to AddSaltToPatients (20100504004716)
   [4;35;1mSQL (2.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100421054101')[0m
   [4;36;1mSQL (2.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100503233639')[0m
   [4;35;1mSQL (1.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100504002901')[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 21:06:30) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.6ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 92ms (View: 91, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 21:06:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 21:06:37) [GET]
+
+ActionController::RoutingError (No route matches "/signup" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#show (for 127.0.0.1 at 2010-05-03 21:06:46) [GET]
+  Parameters: {"id"=>"signup"}
+  [4;36;1mPatient Load (0.1ms)[0m   [0;1mSELECT * FROM "patients" WHERE ("patients"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Patient with ID=signup):
+  app/controllers/patients_controller.rb:16:in `show'
+
+Rendered rescues/_trace (98.1ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 21:06:57) [GET]
+
+ActionController::RoutingError (No route matches "/signup/new" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#signup (for 127.0.0.1 at 2010-05-03 21:07:11) [GET]
+  Parameters: {"id"=>"new"}
+
+ActionController::UnknownAction (No action responded to signup. Actions: create, destroy, and new):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-03 21:07:20) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (undefined local variable or method `signup_path' for #<ActionView::Base:0x1043166b8>) on line #17 of app/views/sessions/new.html.erb:
+14:   </div>
+15: <% end %>
+16: 
+17: <p>New user? <%= link_to "Sign up!", signup_path %></p>
+
+    app/views/sessions/new.html.erb:17
+
+Rendered rescues/_trace (38.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 21:12:12) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 21:12:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
