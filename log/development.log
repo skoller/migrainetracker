@@ -5171,3 +5171,411 @@ ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.
   
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mPatient Create (0.5ms)[0m   [0mINSERT INTO "patients" ("name", "created_at", "updated_at", "email") VALUES('fuck', '2010-05-03 21:57:12', '2010-05-03 21:57:12', 'you@gmail.com')[0m
+  [4;36;1mPatient Load (0.4ms)[0m   [0;1mSELECT * FROM "patients" WHERE ("patients"."id" = 2) [0m
+  [4;35;1mPatient Create (0.2ms)[0m   [0mINSERT INTO "patients" ("name", "created_at", "updated_at", "email") VALUES('shithead', '2010-05-03 22:00:33', '2010-05-03 22:00:33', 'shit@gmail.com')[0m
+  [4;36;1mPatient Create (0.2ms)[0m   [0;1mINSERT INTO "patients" ("name", "created_at", "updated_at", "email") VALUES('anotherone', '2010-05-03 22:01:34', '2010-05-03 22:01:34', 'one@gmail.com')[0m
+  [4;35;1mPatient Load (0.4ms)[0m   [0mSELECT * FROM "patients" WHERE ("patients"."id" = 3) [0m
+  [4;36;1mPatient Load (0.3ms)[0m   [0;1mSELECT * FROM "patients" WHERE ("patients"."id" = 2) [0m
+  [4;35;1mPatient Load (0.4ms)[0m   [0mSELECT * FROM "patients" WHERE ("patients"."email" = 'you@gmail.com') LIMIT 1[0m
+  [4;36;1mPatient Load (0.6ms)[0m   [0;1mSELECT * FROM "patients" [0m
+  [4;35;1mPatient Load (0.4ms)[0m   [0mSELECT * FROM "patients" WHERE ("patients"."name" = 'anotherone') LIMIT 1[0m
+  [4;36;1mPatient Load (0.4ms)[0m   [0;1mSELECT * FROM "patients" ORDER BY patients.id DESC LIMIT 1[0m
+  [4;35;1mPatient Load (0.4ms)[0m   [0mSELECT * FROM "patients" LIMIT 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mPatient Load (0.2ms)[0m   [0;1mSELECT * FROM "patients" WHERE ("patients"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "headaches" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "start_time" integer, "duration" integer, "initial_severity" varchar(255), "max_severity" varchar(255), "notes" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCREATE TABLE "patients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (20.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100421054101')[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100421053519')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePatients (20100421053519)
+Migrating to CreateHeadaches (20100421054101)
+Migrating to AddEmailUniquenessIndex (20100503233639)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE UNIQUE INDEX "index_Patients_on_email" ON "Patients" ("email")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100503233639')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("headaches")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("patients")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_Patients_on_email')[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 16:44:26) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (31.2ms)
+Rendered layouts/_header (2.8ms)
+Rendered layouts/_footer (14.7ms)
+Completed in 223ms (View: 222, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 16:44:27) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 16:44:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 16:44:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-03 16:44:35) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 16:44:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-03 16:44:38) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 16:44:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-03 16:44:40) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 16:44:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-03 16:44:42) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.9ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 42ms (View: 41, DB: 0) | 200 OK [http://localhost/help]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 16:44:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 16:44:43) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 16:44:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-05-03 16:57:52) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `attr_accesible' for #<Class:0x1010adff0>):
+  app/models/patient.rb:2
+  app/controllers/patients_controller.rb:5:in `index'
+
+Rendered rescues/_trace (37.6ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-03 16:58:10) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 43ms (View: 41, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 16:58:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-05-03 16:58:13) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `attr_accesible' for #<Class:0x1041a9438>):
+  app/models/patient.rb:2
+  app/controllers/patients_controller.rb:5:in `index'
+
+Rendered rescues/_trace (36.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-05-03 17:00:46) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `attr_accesible' for #<Class:0x1043562b8>):
+  app/models/patient.rb:2
+  app/controllers/patients_controller.rb:5:in `index'
+
+Rendered rescues/_trace (36.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-05-03 17:06:00) [GET]
+  [4;36;1mPatient Load (0.7ms)[0m   [0;1mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 234ms (View: 141, DB: 1) | 200 OK [http://localhost/patients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 17:06:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#show (for 127.0.0.1 at 2010-05-03 17:08:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPatient Load (0.2ms)[0m   [0mSELECT * FROM "patients" WHERE ("patients"."id" = 1) [0m
+Rendering template within layouts/patients
+Rendering patients/show
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/patients/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 17:08:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#show (for 127.0.0.1 at 2010-05-03 17:08:16) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPatient Load (0.1ms)[0m   [0;1mSELECT * FROM "patients" WHERE ("patients"."id" = 2) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Patient with ID=2):
+  app/controllers/patients_controller.rb:16:in `show'
+
+Rendered rescues/_trace (31.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#show (for 127.0.0.1 at 2010-05-03 17:08:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPatient Load (0.2ms)[0m   [0mSELECT * FROM "patients" WHERE ("patients"."id" = 1) [0m
+Rendering template within layouts/patients
+Rendering patients/show
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/patients/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 17:08:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#index (for 127.0.0.1 at 2010-05-03 17:08:39) [GET]
+  [4;36;1mPatient Load (0.5ms)[0m   [0;1mSELECT * FROM "patients" [0m
+Rendering template within layouts/patients
+Rendering patients/index
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/patients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 17:08:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HeadachesController#index (for 127.0.0.1 at 2010-05-03 17:08:51) [GET]
+  [4;35;1mHeadach Load (0.9ms)[0m   [0mSELECT * FROM "headaches" [0m
+Rendering template within layouts/headaches
+Rendering headaches/index
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 77ms (View: 55, DB: 1) | 200 OK [http://localhost/headaches]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 17:08:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HeadachesController#show (for 127.0.0.1 at 2010-05-03 17:08:55) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mHeadach Load (0.2ms)[0m   [0;1mSELECT * FROM "headaches" WHERE ("headaches"."id" = 2) [0m
+Rendering template within layouts/headaches
+Rendering headaches/show
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 43ms (View: 37, DB: 0) | 200 OK [http://localhost/headaches/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-03 17:08:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
