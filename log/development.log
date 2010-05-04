@@ -6431,3 +6431,23 @@ ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing PatientsController#new (for 127.0.0.1 at 2010-05-03 21:17:04) [GET]
+Rendering template within layouts/patients
+Rendering patients/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/patients/new.html.erb:
+1: <h2>Sign up</h2>
+2: 
+3: <% form_for(@user) do |f| %>
+4:   <div class="field">
+5:     <%= f.label :name %><br />
+6:     <%= f.text_field :name %>
+
+    app/views/patients/new.html.erb:3
+    app/controllers/patients_controller.rb:31:in `new'
+
+Rendered rescues/_trace (46.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
